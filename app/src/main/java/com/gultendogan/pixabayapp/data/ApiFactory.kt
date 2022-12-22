@@ -12,7 +12,6 @@ interface ApiFactory {
 
 
     @GET("api/?key=32237105-70788f503b71c8de73076ab0b")
-    suspend fun getAllImages(
-    ): List<Hit>
+    suspend fun getAllImages(): PixabayBean
 
 }

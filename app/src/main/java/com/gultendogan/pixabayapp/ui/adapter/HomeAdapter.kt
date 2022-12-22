@@ -1,14 +1,12 @@
 package com.gultendogan.pixabayapp.ui.adapter
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.gultendogan.pixabayapp.R
-import com.gultendogan.pixabayapp.data.Hit
+import com.gultendogan.pixabayapp.data.PixabayBean.Hit
 import com.gultendogan.pixabayapp.databinding.HomeRecyclerItemBinding
 
 class HomeAdapter :RecyclerView.Adapter<HomeAdapter.MyViewHolder>(){
@@ -42,7 +40,7 @@ class HomeAdapter :RecyclerView.Adapter<HomeAdapter.MyViewHolder>(){
         with(holder){
             with(product){
                 binding.tvTitle.text = product[position].user
-                binding.tvPrice.text = product[position].user_id.toString()
+                binding.tvPrice.text = product[position].userId.toString()
 
                 Glide.with(binding.ivImage)
                     .load(product[position].previewURL)

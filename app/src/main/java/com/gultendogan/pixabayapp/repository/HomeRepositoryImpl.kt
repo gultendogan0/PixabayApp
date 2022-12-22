@@ -1,9 +1,7 @@
 package com.gultendogan.pixabayapp.repository
 
 import com.gultendogan.pixabayapp.data.ApiFactory
-import com.gultendogan.pixabayapp.data.Hit
-import kotlinx.coroutines.flow.Flow
-import retrofit2.Response
+import com.gultendogan.pixabayapp.data.PixabayBean
 import javax.inject.Inject
 
 class HomeRepositoryImpl @Inject constructor(
@@ -18,7 +16,7 @@ class HomeRepositoryImpl @Inject constructor(
     //    return apiFactory.getAllCharacter(page)
     //}
 
-    suspend fun getImages(): List<Hit> {
+    suspend fun getImages(): PixabayBean {
         return apiFactory.getAllImages()
     }
 

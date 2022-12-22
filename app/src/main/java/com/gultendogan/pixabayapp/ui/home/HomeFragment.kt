@@ -51,7 +51,7 @@ class HomeFragment : Fragment() {
     private fun observe(){
         lifecycleScope.launchWhenCreated {
             viewModel.characterList.observe(viewLifecycleOwner){
-                homeAdapter.product = it
+                homeAdapter.product = it.hits
             }
         }
     }
