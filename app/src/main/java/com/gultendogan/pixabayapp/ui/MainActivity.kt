@@ -28,21 +28,11 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
         initNavController(binding.fragmentContainerView)
         initToolbar(binding.toolbar)
 
+
         vM.toolbarLiftedObservable.observe(this) {
             binding.appBarLayout.setLiftable(it )
         }
 
-        //Bottom Navigation
-        val navView: BottomNavigationView = binding.navView
-        //navController = findNavController(R.id.main_navigation)
-        val appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.menu_action_home, R.id.menu_action_search, R.id.menu_action_fav
-            )
-        )
-
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
 
 
     }

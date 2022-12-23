@@ -34,6 +34,6 @@
     <fragment
         android:id="@+id/favFragment"
         android:name="com.gultendogan.pixabayapp.ui.pages.fav.FavFragment"
-        android:label="fragment_fav"
+        android:label="Favorite"
         tools:layout="@layout/fragment_fav" />
 </navigation>
