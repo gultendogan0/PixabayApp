@@ -1,4 +1,4 @@
-package com.gultendogan.pixabayapp.common.utils.ext
+package com.gultendogan.pixabayapp.utils.ext
 
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager

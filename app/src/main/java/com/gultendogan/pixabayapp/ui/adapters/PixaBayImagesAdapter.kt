@@ -4,12 +4,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
-import coil.size.Scale
 import com.gultendogan.pixabayapp.R
 import com.gultendogan.pixabayapp.common.base.ui.BaseRvAdapter
-import com.gultendogan.pixabayapp.common.utils.ext.inflateRvItem
+import com.gultendogan.pixabayapp.utils.ext.inflateRvItem
 import com.gultendogan.pixabayapp.databinding.ItemImageMainBinding
-import com.gultendogan.pixabayapp.model.network.dto.Hit
+import com.gultendogan.pixabayapp.data.entity.Hit
 
 class PixaBayImagesAdapter(
     val clickListener: (Hit) -> Unit

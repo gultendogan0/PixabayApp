@@ -1,4 +1,4 @@
-package com.gultendogan.pixabayapp.common.utils.ext
+package com.gultendogan.pixabayapp.utils.ext
 
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavDirections

@@ -1,8 +1,8 @@
-package com.gultendogan.pixabayapp.model.network.response
+package com.gultendogan.pixabayapp.data.entity
 
 import androidx.annotation.Keep
 import com.google.gson.annotations.SerializedName
-import com.gultendogan.pixabayapp.model.network.dto.Hit
+import com.gultendogan.pixabayapp.data.entity.Hit
 
 @Keep
 data class PixaBayResponse(

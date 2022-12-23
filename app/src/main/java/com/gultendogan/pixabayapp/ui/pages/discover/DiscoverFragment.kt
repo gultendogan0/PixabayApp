@@ -8,8 +8,8 @@ import dagger.hilt.android.AndroidEntryPoint
 import com.gultendogan.pixabayapp.R
 import com.gultendogan.pixabayapp.common.base.ui.BaseFragment
 import com.gultendogan.pixabayapp.common.base.wrappers.ResponseWrapper
-import com.gultendogan.pixabayapp.common.utils.ext.initGrid
-import com.gultendogan.pixabayapp.common.utils.ext.navigateWith
+import com.gultendogan.pixabayapp.utils.ext.initGrid
+import com.gultendogan.pixabayapp.utils.ext.navigateWith
 import com.gultendogan.pixabayapp.databinding.FragmentDiscoverBinding
 import com.gultendogan.pixabayapp.ui.adapters.PixaBayImagesAdapter
 

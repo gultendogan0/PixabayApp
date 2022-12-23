@@ -2,7 +2,7 @@ package com.gultendogan.pixabayapp.ui
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.gultendogan.pixabayapp.common.utils.ext.asLiveData
+import com.gultendogan.pixabayapp.utils.ext.asLiveData
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

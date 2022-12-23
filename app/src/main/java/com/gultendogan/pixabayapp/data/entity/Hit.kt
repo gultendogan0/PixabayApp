@@ -1,4 +1,4 @@
-package com.gultendogan.pixabayapp.model.network.dto
+package com.gultendogan.pixabayapp.data.entity
 
 import com.google.gson.annotations.SerializedName
 import androidx.annotation.Keep

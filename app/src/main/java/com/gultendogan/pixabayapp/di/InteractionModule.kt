@@ -7,7 +7,7 @@ import dagger.hilt.android.components.ViewModelComponent
 import dagger.hilt.android.scopes.ViewModelScoped
 import com.gultendogan.pixabayapp.model.interactors.DiscoveryInteractor
 import com.gultendogan.pixabayapp.model.interactors.SearchInteractor
-import com.gultendogan.pixabayapp.model.network.api.PixabayApi
+import com.gultendogan.pixabayapp.data.api.PixabayApi
 
 @Module
 @InstallIn(ViewModelComponent::class)

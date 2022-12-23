@@ -1,4 +1,4 @@
-package com.gultendogan.pixabayapp.di
+package com.gultendogan.pixabayapp.network
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
@@ -7,7 +7,7 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import com.gultendogan.pixabayapp.BuildConfig
-import com.gultendogan.pixabayapp.model.network.api.PixabayApi
+import com.gultendogan.pixabayapp.data.api.PixabayApi
 import okhttp3.ConnectionPool
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient

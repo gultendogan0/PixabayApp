@@ -1,6 +1,6 @@
-package com.gultendogan.pixabayapp.model.network.api
+package com.gultendogan.pixabayapp.data.api
 
-import com.gultendogan.pixabayapp.model.network.response.PixaBayResponse
+import com.gultendogan.pixabayapp.data.entity.PixaBayResponse
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

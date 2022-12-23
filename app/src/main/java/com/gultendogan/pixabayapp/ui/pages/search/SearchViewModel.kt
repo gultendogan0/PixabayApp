@@ -5,10 +5,9 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import com.gultendogan.pixabayapp.common.base.wrappers.ResponseWrapper
-import com.gultendogan.pixabayapp.common.utils.ext.asLiveData
+import com.gultendogan.pixabayapp.utils.ext.asLiveData
 import com.gultendogan.pixabayapp.model.interactors.SearchInteractor
-import com.gultendogan.pixabayapp.model.network.response.PixaBayResponse
-import kotlinx.coroutines.flow.collect
+import com.gultendogan.pixabayapp.data.entity.PixaBayResponse
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 

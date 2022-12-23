@@ -1,7 +1,7 @@
 package com.gultendogan.pixabayapp.model.interactors
 
 import com.gultendogan.pixabayapp.common.base.interactors.BaseNetworkInteractor
-import com.gultendogan.pixabayapp.model.network.api.PixabayApi
+import com.gultendogan.pixabayapp.data.api.PixabayApi
 
 class SearchInteractor(
     private val api: PixabayApi

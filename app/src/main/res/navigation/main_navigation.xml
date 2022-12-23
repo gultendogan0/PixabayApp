@@ -22,7 +22,7 @@
         android:label="DetailsDialog">
         <argument
             android:name="hit"
-            app:argType="com.gultendogan.pixabayapp.model.network.dto.Hit" />
+            app:argType="com.gultendogan.pixabayapp.data.entity.Hit" />
     </dialog>
     <action
         android:id="@+id/dialog_details"
