@@ -62,8 +62,14 @@ class DiscoverFragment : BaseFragment<FragmentDiscoverBinding>() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
+
             R.id.menu_action_search -> DiscoverFragmentDirections.actionDiscoverFragmentToSearchFragment()
                 .navigateWith(this)
+
+            R.id.menu_action_fav -> DiscoverFragmentDirections.actionDiscoverFragmentToFavFragment()
+                .navigateWith(this)
+
+
         }
         return super.onOptionsItemSelected(item)
     }

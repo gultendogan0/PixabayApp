@@ -22,7 +22,9 @@ class PixaBayImagesAdapter(
                 clickListener.invoke(hit)
             }
             binding.image.load(hit.webformatURL)
-            binding.user.text = hit.user
+            binding.like.text = hit.likes.toString()
+            binding.comments.text = "(" + hit.comments.toString() + " comments)"
+            binding.views.text = hit.views.toString() + " (views)"
         }
     }
 

@@ -3,6 +3,12 @@ package com.gultendogan.pixabayapp.ui
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.activity.viewModels
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.gultendogan.pixabayapp.R
 import dagger.hilt.android.AndroidEntryPoint
 import com.gultendogan.pixabayapp.common.base.ui.BaseActivity
 import com.gultendogan.pixabayapp.databinding.ActivityMainBinding
@@ -25,6 +31,19 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
         vM.toolbarLiftedObservable.observe(this) {
             binding.appBarLayout.setLiftable(it )
         }
+
+        //Bottom Navigation
+        val navView: BottomNavigationView = binding.navView
+        //navController = findNavController(R.id.main_navigation)
+        val appBarConfiguration = AppBarConfiguration(
+            setOf(
+                R.id.menu_action_home, R.id.menu_action_search, R.id.menu_action_fav
+            )
+        )
+
+        setupActionBarWithNavController(navController, appBarConfiguration)
+        navView.setupWithNavController(navController)
+
 
     }
 

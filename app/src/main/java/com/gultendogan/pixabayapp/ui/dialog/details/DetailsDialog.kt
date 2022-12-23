@@ -34,9 +34,13 @@ class DetailsDialog : BaseBottomSheetDialog<DialogDetailsBinding>() {
                 transformations(CircleCropTransformation())
             }
             binding.cover.load(this.webformatURL)
-            binding.name.text = this.user
-            binding.tags.text = this.tags
-            binding.views.text = "Views: ${this.views}"
+            //binding.name.text = this.user
+            //binding.tags.text = this.tags
+            //binding.views.text = "Views: ${this.views}"
+            binding.like.text = this.likes.toString()
+            binding.comments.text = this.comments.toString() + " (comments)"
+            binding.userName.text = this.user
+            binding.views.text = this.views.toString() + " (views)"
             binding.fullSize.setOnClickListener {
                 loadFullSize(this.largeImageURL)
             }

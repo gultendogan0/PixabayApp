@@ -3,8 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
+        android:id="@+id/menu_action_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"
+        app:showAsAction="ifRoom" />
+
+    <item
         android:id="@+id/menu_action_search"
         android:icon="@drawable/ic_baseline_search_24"
         android:title="Search"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_action_fav"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        android:title="Favorite"
         app:showAsAction="ifRoom" />
 </menu>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
     app:startDestination="@id/discoverFragment">
 
@@ -11,6 +12,9 @@
         <action
             android:id="@+id/action_discoverFragment_to_searchFragment"
             app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_discoverFragment_to_favFragment"
+            app:destination="@id/favFragment" />
     </fragment>
     <dialog
         android:id="@+id/detailsDialog"
@@ -27,4 +31,9 @@
         android:id="@+id/searchFragment"
         android:name="com.gultendogan.pixabayapp.ui.pages.search.SearchFragment"
         android:label="Search" />
+    <fragment
+        android:id="@+id/favFragment"
+        android:name="com.gultendogan.pixabayapp.ui.pages.fav.FavFragment"
+        android:label="fragment_fav"
+        tools:layout="@layout/fragment_fav" />
 </navigation>
