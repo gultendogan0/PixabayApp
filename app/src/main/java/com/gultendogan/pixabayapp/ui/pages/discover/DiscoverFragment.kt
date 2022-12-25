@@ -53,6 +53,9 @@ class DiscoverFragment : BaseFragment<FragmentDiscoverBinding>() {
             vM.getDiscover()
         }
 
+        mainAdapter.onFavoriteItemClick = {
+            vM.insertFavorite(it)
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
