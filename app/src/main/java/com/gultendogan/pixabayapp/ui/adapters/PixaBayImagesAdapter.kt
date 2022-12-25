@@ -2,6 +2,7 @@ package com.gultendogan.pixabayapp.ui.adapters
 
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.gultendogan.pixabayapp.R
