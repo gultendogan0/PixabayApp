@@ -2,13 +2,17 @@ package com.gultendogan.pixabayapp.data.entity
 
 import com.google.gson.annotations.SerializedName
 import androidx.annotation.Keep
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import java.io.Serializable
 
 @Keep
+@Entity(tableName = "pixebayItem")
 data class Hit(
     @SerializedName("collections") val collections: Int,
     @SerializedName("comments") val comments: Int,
     @SerializedName("downloads") val downloads: Int,
+    @PrimaryKey
     @SerializedName("id") val id: Int,
     @SerializedName("imageHeight") val imageHeight: Int,
     @SerializedName("imageSize") val imageSize: Int,
