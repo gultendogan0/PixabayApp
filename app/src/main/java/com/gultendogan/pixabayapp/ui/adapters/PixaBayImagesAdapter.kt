@@ -15,6 +15,8 @@ class PixaBayImagesAdapter(
     val clickListener: (Hit) -> Unit
 ) : BaseRvAdapter<Hit, PixaBayImagesAdapter.PixaBayViewHolder>() {
 
+    var onFavoriteItemClick: ((Hit) -> Unit)? = null
+
     inner class PixaBayViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val binding = ItemImageMainBinding.bind(itemView)
         fun bindView(hit: Hit) {
@@ -25,6 +27,12 @@ class PixaBayImagesAdapter(
             binding.like.text = hit.likes.toString()
             binding.comments.text = "(" + hit.comments.toString() + " comments)"
             binding.views.text = hit.views.toString() + " (views)"
+
+            binding.favButton.setOnClickListener {
+                onFavoriteItemClick?.invoke(hit)
+
+
+            }
         }
     }
 
