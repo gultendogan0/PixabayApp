@@ -8,7 +8,13 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.GridLayoutManager
+import com.gultendogan.pixabayapp.common.base.wrappers.ResponseWrapper
 import com.gultendogan.pixabayapp.databinding.FragmentFavBinding
+import com.gultendogan.pixabayapp.ui.adapters.PixaBayImagesAdapter
+import com.gultendogan.pixabayapp.ui.pages.discover.DiscoverFragmentDirections
+import com.gultendogan.pixabayapp.utils.ext.initGrid
+import com.gultendogan.pixabayapp.utils.ext.navigateWith
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

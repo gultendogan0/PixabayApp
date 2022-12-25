@@ -13,12 +13,6 @@ abstract class BaseFragment<VB : ViewBinding> : Fragment() {
 
     abstract val _BindingInflater: (LayoutInflater, ViewGroup?, Boolean) -> VB
 
-    //this is to optimize memory, _binding is reference to view and if you navigate,
-    //you will want to remove your view reference to save memory
-    //downside is you'll have to save state
-    //good side is you can access binding without nulls + your memory is tidy
-    //IMPORTANT never use binding (not _binding) before onViewCreated or after onDestroyView unless
-    //you like NPE
     private var _binding: VB? = null
     val binding
         get() = _binding!!
@@ -43,8 +37,6 @@ abstract class BaseFragment<VB : ViewBinding> : Fragment() {
             })
     }
 
-    //for nav components
-    //can be overriden if need be
     open fun onBackPressed() {
         findNavController().popBackStack()
     }
